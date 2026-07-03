@@ -1,0 +1,56 @@
+name: Update Profile
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/profile.yml
+
+  schedule:
+    - cron: "30 16 * * 0"
+
+permissions:
+  contents: write
+
+jobs:
+  update-profile:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Generate GitHub Stats
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&hide=stars&show=prs_merged&hide_rank=true&border_radius=4.5&border_color=A8A8A8&title_color=41B883&text_color=273849&icon_color=41B883
+          path: media/stats.svg
+
+      - name: Generate streak stats
+        uses: DenverCoder1/github-readme-streak-stats@v1.7.0
+        with:
+          options: user=${{ github.repository_owner }}&theme=vue
+          path: media/streak.svg
+
+      - name: Generate GitHub Activity Graph
+        uses: maurodesouza/github-readme-activity-graph-action@v1
+        with:
+          username: ${{ github.repository_owner }}
+          options: theme=github-light
+          output_path: media/activity-graph.svg
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add media/*.svg
+
+          if git diff --cached --quiet; then
+            echo "no changes to commit"
+          else
+            git commit -m "chore: update github profile stats"
+            git push
+          fi
