@@ -9,11 +9,11 @@
         aria-labelledby="descId"
       >
         <title id="titleId">DevTwilight's GitHub Stats, Rank: C+</title>
-        <desc id="descId">Total Commits  (last year) : 32, Total PRs: 27, Total PRs Merged: 22, Total Issues: 87, Contributed to (last year): 35</desc>
+        <desc id="descId">Total Commits  (last year) : 37, Total PRs: 27, Total PRs Merged: 22, Total Issues: 88, Contributed to (last year): 35</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
-            fill: #41B883;
+            fill: #41b883;
             animation: fadeInAnimation 0.8s ease-in-out forwards;
           }
           @supports(-moz-appearance: auto) {
@@ -46,18 +46,18 @@
     .not_bold { font-weight: 400 }
     .bold { font-weight: 700 }
     .icon {
-      fill: #41B883;
+      fill: #41b883;
       display: block;
     }
 
     .rank-circle-rim {
-      stroke: #41B883;
+      stroke: #41b883;
       fill: none;
       stroke-width: 6;
       opacity: 0.2;
     }
     .rank-circle {
-      stroke: #41B883;
+      stroke: #41b883;
       stroke-dasharray: 250;
       fill: none;
       stroke-width: 6;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 201.0479174205585;
+        stroke-dashoffset: 200.46886733163305;
       }
     }
   
@@ -109,7 +109,7 @@
           y="0.5"
           rx="4.5"
           height="99%"
-          stroke="#A8A8A8"
+          stroke="#e4e2e2"
           width="303"
           fill="#fffefe"
           stroke-opacity="1"
@@ -151,7 +151,7 @@
         x="224.01"
         y="12.5"
         data-testid="commits"
-      >32</text>
+      >37</text>
     </g>
   </g><g transform="translate(0, 25)">
     <g class="stagger" style="animation-delay: 600ms" transform="translate(25, 0)">
@@ -196,7 +196,7 @@
         x="224.01"
         y="12.5"
         data-testid="issues"
-      >87</text>
+      >88</text>
     </g>
   </g><g transform="translate(0, 100)">
     <g class="stagger" style="animation-delay: 1050ms" transform="translate(25, 0)">
