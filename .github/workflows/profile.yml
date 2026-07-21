@@ -25,7 +25,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&hide=stars&show=prs_merged&hide_rank=true&border_radius=4.5&border_color=A8A8A8&title_color=41B883&text_color=273849&icon_color=41B883
+          options: username=${{ github.repository_owner }}&theme=vue&show_icons=true&hide=stars&show=prs_merged&hide_rank=true
           path: media/stats.svg
 
       - name: Generate streak stats
