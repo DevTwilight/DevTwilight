@@ -35,7 +35,7 @@ jobs:
           path: media/streak.svg
 
       - name: Generate GitHub Activity Graph
-        uses: maurodesouza/github-readme-activity-graph-action@v1
+        uses: maurodesouza/github-readme-activity-graph-action@9b38b03cac7ffb9f093a82f0ea9c634d5df62297
         with:
           username: ${{ github.repository_owner }}
           options: theme=github-light
