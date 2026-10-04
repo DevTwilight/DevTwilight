@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">DevTwilight&#39;s GitHub Stats, Rank: C+</title>
-        <desc id="descId">Total Commits  (last year) : 52, Total PRs: 43, Total PRs Merged: 34, Total Issues: 102, Contributed to (last year): 39</desc>
+        <desc id="descId">Total Commits  (last year) : 52, Total PRs: 43, Total PRs Merged: 34, Total Issues: 102, Contributed to (last year): 38</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -218,7 +218,7 @@
         x="224.01"
         y="12.5"
         data-testid="contribs"
-      >39</text>
+      >38</text>
     </g>
   </g>
     </svg>
